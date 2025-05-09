@@ -58,38 +58,41 @@ const Header = () => {
 
   return (
     <>
-      <div>
-        <div className="container mx-auto px-2 py-2 z-10 text-center text-white">
+      <div className="pt-4">
+        <div className="container mx-auto px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-8"
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-6"
           >
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-1 drop-shadow-xl text-blue-800">
+            <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight text-blue-900 drop-shadow-lg">
               ICSEAMS 2025
             </h1>
-            <h2 className="text-2xl md:text-3xl font-medium mb-2 drop-shadow-lg text-blue-500">
+            <h2 className="text-lg md:text-2xl font-semibold text-blue-600 mt-2 leading-snug">
               1<sup>st</sup> International Conference on
               <br />
-              Sustainable Energy and Advanced Manufacturing Systems
+              Sustainable Energy & Advanced Manufacturing Systems
             </h2>
-            <p className="text-xl mb-1 drop-shadow-md text-green-700">
-              11-13 September 2025
+            <p className="text-sm md:text-base text-green-700 mt-3 font-medium">
+              11–13 September 2025
             </p>
-            <p className="text-lg drop-shadow-md text-green-700">
+            <p className="text-sm md:text-base text-green-700">
               BVRIT, Telangana, India
             </p>
           </motion.div>
 
           <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4 mt-10"
-            initial={{ opacity: 0, y: 30 }}
+            className="flex flex-col sm:flex-row justify-center gap-4 mt-6"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          ></motion.div>
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          >
+            {/* Optional: CTA buttons or animated cards can go here */}
+          </motion.div>
         </div>
       </div>
+
       <header
         className={`sticky top-0 z-50 transition-all duration-200 ${
           scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-2"

@@ -8,7 +8,7 @@ const RegistrationCTA = () => {
     <AnimatedSection className="py-20 bg-gradient-to-r from-primary-800 to-secondary-900 text-white">
       <div className="container">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Us at ICSEAMS 2025</h2>
+          <h2 className="text-3xl md:text-4xl text-white font-bold mb-6">Join Us at ICSEAMS 2025</h2>
           <p className="text-xl text-gray-200 mb-8">
             Connect with researchers, industry experts, and academics from around the world.
             Register today to secure your place at this premier international conference.

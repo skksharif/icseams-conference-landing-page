@@ -1,124 +1,73 @@
 import React, { useEffect } from 'react';
 import PageHeader from '../components/common/PageHeader';
-import AnimatedSection from '../components/common/AnimatedSection';
 import { motion } from 'framer-motion';
 
-// Placeholder committee data
+// New committee data without photos
 const committees = {
-  chiefPatrons: [
-    {
-      name: 'Dr. A. K. Singh',
-      title: 'Vice Chancellor',
-      affiliation: 'University of Science and Technology',
-      photo: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. Rajiv Kumar',
-      title: 'Chairman',
-      affiliation: 'BVRIT',
-      photo: 'https://images.pexels.com/photos/5212339/pexels-photo-5212339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    }
-  ],
-  patrons: [
-    {
-      name: 'Prof. Sunita Sharma',
-      title: 'Dean of Engineering',
-      affiliation: 'BVRIT',
-      photo: 'https://images.pexels.com/photos/5212309/pexels-photo-5212309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. M. N. Rao',
-      title: 'Director',
-      affiliation: 'Institute of Advanced Research',
-      photo: 'https://images.pexels.com/photos/8989479/pexels-photo-8989479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    }
-  ],
-  generalChairs: [
-    {
-      name: 'Prof. Anand Prakash',
-      title: 'Professor of Mechanical Engineering',
-      affiliation: 'BVRIT',
-      photo: 'https://images.pexels.com/photos/5795034/pexels-photo-5795034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. Rekha Singh',
-      title: 'Professor of Electrical Engineering',
-      affiliation: 'BVRIT',
-      photo: 'https://images.pexels.com/photos/6325975/pexels-photo-6325975.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    }
-  ],
-  technicalChairs: [
-    {
-      name: 'Dr. Sarah Johnson',
-      title: 'Associate Professor',
-      affiliation: 'University of California, Berkeley',
-      photo: 'https://images.pexels.com/photos/5699377/pexels-photo-5699377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. Li Wei',
-      title: 'Associate Professor',
-      affiliation: 'Tsinghua University',
-      photo: 'https://images.pexels.com/photos/8297452/pexels-photo-8297452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Prof. Hans Mueller',
-      title: 'Professor',
-      affiliation: 'Technical University of Munich',
-      photo: 'https://images.pexels.com/photos/5397723/pexels-photo-5397723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    }
-  ],
   advisoryCommittee: [
-    {
-      name: 'Prof. James Wilson',
-      title: 'Professor',
-      affiliation: 'MIT',
-      photo: 'https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. Maya Patel',
-      title: 'Director of Research',
-      affiliation: 'National Renewable Energy Laboratory',
-      photo: 'https://images.pexels.com/photos/5704849/pexels-photo-5704849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Prof. Carlos Rodriguez',
-      title: 'Professor',
-      affiliation: 'University of São Paulo',
-      photo: 'https://images.pexels.com/photos/5490280/pexels-photo-5490280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    },
-    {
-      name: 'Dr. Fatima Al-Zahrani',
-      title: 'Professor',
-      affiliation: 'King Abdullah University of Science and Technology',
-      photo: 'https://images.pexels.com/photos/5490835/pexels-photo-5490835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-    }
+    { name: 'Shuichi TORII', affiliation: 'Department of Mechanical System Engineering, Kurume Institute of Technology, Japan' },
+    { name: 'Shrikant Joshi', affiliation: 'Department of Engineering Science, University West, Trollhättan, Sweden' },
+    { name: 'Chinnapat Panwisawas', affiliation: 'School of Engineering and Materials Science, Queen Mary University of London, UK' },
+    { name: 'Y. Ravi Kumar', affiliation: 'Department of Mechanical Engineering, NIT Warangal, India' },
+    { name: 'Etienne Martin', affiliation: 'Mechanical Engineering Department, Polytechnique Montreal, Canada' },
+    { name: 'A. Venu Gopal', affiliation: 'Department of Mechanical Engineering, NIT Warangal, India' }
+  ],
+  technicalCommittee: [
+    { name: 'Mrunali Sona', affiliation: 'Materials Engineering Department, Ashok Leyland Technical Centre' },
+    { name: 'Manjaiah M', affiliation: 'Department of Mechanical Engineering, NIT Warangal, India' },
+    { name: 'Nagamothu Kishore Babu', affiliation: 'Dept. of Metallurgical and Materials Engineering, NIT Warangal, India' },
+    { name: 'Saravana Bavan', affiliation: 'Department of Mechanical Engineering, Dayananda Sagar University, India' },
+    { name: 'M. K. Mathapati', affiliation: 'Mechanical Engineering, KLE College of Engineering & Technology, India' },
+    { name: 'R. Thirumalai', affiliation: 'Dept of Aeronautical Engineering, Hindusthan Institute of Technology, India' },
+    { name: 'Gajanan Anne', affiliation: 'Dept of Mechanical and Industrial Engineering, Manipal Institute of Technology, India' },
+    { name: 'Gopi K R', affiliation: 'CYIENT Limited, Bangalore, India' },
+    { name: 'Sai Saketha Chandra Athkuri', affiliation: 'Mechanical Engineering Dept., NIT Calicut, India' }
+  ],
+  organizingCommittee: [
+    { name: 'K. V. Vishnu Raju', role: 'Chief Patron', affiliation: 'Chairman, SVES, India' },
+    { name: 'Ravichandran Rajagopal', role: 'Patron', affiliation: 'Vice Chairman, SVES, India' },
+    { name: 'K. Aditya Vissam', role: 'Patron', affiliation: 'Secretary, SVES, India' },
+    { name: 'K. Lakshmi Prasad', role: 'Co-Patron', affiliation: 'Director, BVRIT Narsapur, India' },
+    { name: 'Sanjay Dubey', role: 'Co-Patron', affiliation: 'Principal, BVRIT Narsapur, India' },
+    { name: 'Raju Aedla', role: 'Technical Chair', affiliation: 'Dean - R&D, VEDIC, SVES, India' },
+    { name: 'A. Varun', role: 'Organizing Chair', affiliation: 'Head, Dept. of Mechanical Engineering, BVRIT, Narsapur' },
+    { name: 'M Sandeep Kumar', role: 'Organizing Secretary', affiliation: 'Mechanical Engineering, BVRIT, Narsapur, India' },
+    { name: 'M Vishnu Vardhan Reddy', role: 'Organizing Joint-Secretary', affiliation: 'Mechanical Engineering, BVRIT, Narsapur, India' },
+    { name: 'R Naresh', role: 'Organizing Joint-Secretary', affiliation: 'Mechanical Engineering, BVRIT, Narsapur, India' },
+    { name: 'K Nagu', role: 'Organizing Joint-Secretary', affiliation: 'Mechanical Engineering, BVRIT, Narsapur, India' },
+    { name: 'V. Murali Krishna', role: 'Internal Advisory', affiliation: 'Dean (Academics), BVRITN' },
+    { name: 'A. Jagan', role: 'Internal Advisory', affiliation: 'Dean (IQAC), BVRITN' },
+    { name: 'N Bhoopal', role: 'Internal Advisory', affiliation: 'Dean (Administration), BVRITN' },
+    { name: 'Ch. Madhubabu', role: 'Internal Advisory', affiliation: 'HoD, CSE, BVRITN' },
+    { name: 'B. R. Sanjeeva Reddy', role: 'Internal Advisory', affiliation: 'HoD, ECE, BVRITN' },
+    { name: 'K. Rayudu', role: 'Internal Advisory', affiliation: 'HOD, EEE, BVRITN' },
+    { name: 'H Srujana', role: 'Internal Advisory', affiliation: 'HoD, Biomedical Engineering, BVRITN' },
+    { name: 'G. B. Radhika', role: 'Internal Advisory', affiliation: 'HoD, Chemical Engineering, BVRITN' },
+    { name: 'S. Krishna Rao', role: 'Internal Advisory', affiliation: 'HoD, Civil Engineering, BVRITN' },
+    { name: 'B. Mrunalini Sasanka', role: 'Internal Advisory', affiliation: 'HoD, Freshman Engineering, BVRITN' },
+    { name: 'Dasaradh Ramaiah', role: 'Internal Advisory', affiliation: 'HoD, Information Technology, BVRITN' },
+    { name: 'I. Nageswara Rao', role: 'Internal Advisory', affiliation: 'HoD, MBA, BVRITN' },
+    { name: 'Vishnu Pulavarthy', role: 'Internal Advisory', affiliation: 'HoD, Pharmaceutical Engineering, BVRITN' },
+    { name: 'K. Purnachand', role: 'Internal Advisory', affiliation: 'Program Coordinator, CSE DS, BVRITN' },
+    { name: 'G. Uday Kiran', role: 'Internal Advisory', affiliation: 'Program Coordinator, AI & ML, BVRITN' },
+    { name: 'K. Bhima', role: 'Internal Advisory', affiliation: 'Program Coordinator, CSBS, BVRITN' }
   ]
 };
 
-// Committee member card component
+// Generic card for all types
 const CommitteeMemberCard = ({ member, index }: { member: any, index: number }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="bg-white rounded-lg shadow-md overflow-hidden"
+    transition={{ duration: 0.3, delay: index * 0.05 }}
+    className="bg-white p-4 rounded-lg shadow-md border border-gray-200"
   >
-    <div className="h-48 overflow-hidden">
-      <img 
-        src={member.photo} 
-        alt={member.name} 
-        className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300"
-      />
-    </div>
-    <div className="p-4">
-      <h3 className="text-lg font-semibold text-primary-800">{member.name}</h3>
-      <p className="text-sm text-gray-600">{member.title}</p>
-      <p className="text-sm text-primary-600">{member.affiliation}</p>
-    </div>
+    <h3 className="text-lg font-semibold text-primary-800">{member.name}</h3>
+    {member.role && <p className="text-sm text-gray-700 italic">{member.role}</p>}
+    <p className="text-sm text-gray-600">{member.affiliation}</p>
   </motion.div>
 );
 
-// Committee section component
 const CommitteeSection = ({ title, members }: { title: string, members: any[] }) => (
   <div className="mb-12">
     <h2 className="text-2xl font-bold text-primary-800 mb-6 pb-2 border-b-2 border-primary-200">{title}</h2>
@@ -142,7 +91,6 @@ const CommitteePage = () => {
         title="Organizing Committee" 
         subtitle="Meet the dedicated team behind ICSEAMS 2025"
       />
-      
       <div className="section">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -151,12 +99,9 @@ const CommitteePage = () => {
               working together to create an exceptional conference experience.
             </p>
           </div>
-
-          <CommitteeSection title="Chief Patrons" members={committees.chiefPatrons} />
-          <CommitteeSection title="Patrons" members={committees.patrons} />
-          <CommitteeSection title="General Chairs" members={committees.generalChairs} />
-          <CommitteeSection title="Technical Committee Chairs" members={committees.technicalChairs} />
-          <CommitteeSection title="International Advisory Committee" members={committees.advisoryCommittee} />
+          <CommitteeSection title="Organizing Committee" members={committees.organizingCommittee} />
+          <CommitteeSection title="Technical Committee" members={committees.technicalCommittee} />
+          <CommitteeSection title="Advisory Committee" members={committees.advisoryCommittee} />
         </div>
       </div>
     </div>

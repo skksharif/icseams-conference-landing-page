@@ -34,32 +34,35 @@ const Header = () => {
   return (
     <>
       {/* Logo and Conference Details */}
-      <div className=" flex justify-between items-center bg-white py-6 px-4 text-center border-b">
-        <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-          <img src="/images/logo.png" className="h-12" alt="Vishnu" />
-          <img src="/images/logo.png" className="h-12" alt="BVRIT" />
+      <div className="flex justify-around items-center bg-white py-6 px-4 text-center border-b gap-4">
+        {/* Top Logo - Hidden on mobile */}
+        <div className="hidden md:block">
+          <img src="/images/logo.png" className="h-36 mx-auto" alt="Vishnu" />
         </div>
+
+        {/* Center Content */}
         <div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-wide">
             ICSEAMS-2025
           </h1>
-          <p className="mt-2 text-lg font-medium">
-            1<sup>st</sup> International Conference on  <br />
-            <span className="text-red-600">Sustainable  </span>
-            <span className="text-green-700">Energy  </span>
-             <span className="text-pink-600">and</span>
-            <span className="text-blue-700"> Advanced  </span>
+          <p className="mt-2 text-lg font-medium leading-snug">
+            1<sup>st</sup> International Conference on <br />
+            <span className="text-red-600">Sustainable </span>
+            <span className="text-green-700">Energy </span>
+            <span className="text-pink-600">and </span>
+            <span className="text-blue-700">Advanced </span>
             <span className="text-yellow-600">Manufacturing </span>
-            <span className="text-red-600">Systems  </span>
+            <span className="text-red-600">Systems</span>
           </p>
           <p className="mt-1 font-semibold">11th - 13th September, 2025</p>
           <p className="text-sm">
             B V Raju Institute of Technology, Narsapur, Telangana, INDIA
           </p>
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-4 mb-4">
-          <img src="/images/logo.png" className="h-12" alt="Vishnu" />
-          <img src="/images/logo.png" className="h-12" alt="BVRIT" />
+
+        {/* Bottom Logo - Hidden on mobile */}
+        <div className="hidden md:block">
+          <img src="/images/bvrit.png" className="h-12 mx-auto" alt="BVRIT" />
         </div>
       </div>
 

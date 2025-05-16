@@ -117,7 +117,7 @@ const SpeakersPage = () => {
                     <img 
                       src={speaker.photo} 
                       alt={speaker.name} 
-                      className="w-full h-full object-cover object-center"
+                      className="w-[300px] h-[350px] object-cover object-center"
                     />
                   </div>
                   <div className="md:w-2/3 p-6">

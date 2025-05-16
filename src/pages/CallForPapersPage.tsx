@@ -1,97 +1,133 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Download, CheckCircle, Zap, Factory, BatteryCharging,
-  Cpu, Database, LineChart
-} from 'lucide-react';
 import PageHeader from '../components/common/PageHeader';
+import {
+  Zap,
+  Factory,
+  BatteryCharging,
+  Cpu,
+  Database,
+  LineChart,
+  Leaf,
+  CheckCircle,
+  Download
+} from 'lucide-react';
 
 const topics = [
   {
-    category: 'Sustainable Energy Systems',
+    category: 'Design of Renewable Energy Technologies',
     icon: <Zap className="h-6 w-6 text-primary-600" />,
     items: [
-      'Renewable Energy Technologies (Solar, Wind, Hydro, Geothermal)',
-      'Bioenergy and Biofuels',
-      'Smart Grids and Microgrids',
-      'Energy Harvesting',
-      'Energy Efficiency and Conservation',
-      'Energy Management Systems',
-      'Clean Energy Policies and Economics',
-      'Sustainable Energy Integration'
+      'Solar Photovoltaic (PV) and Solar thermal systems',
+      'Wind Turbine Design and Offshore Wind Technologies',
+      'Small and Large scale hydropower systems',
+      'Design of hybrid renewable energy systems'
     ]
   },
   {
-    category: 'Advanced Manufacturing Systems',
-    icon: <Factory className="h-6 w-6 text-primary-600" />,
-    items: [
-      'Additive Manufacturing (3D Printing)',
-      'Digital Manufacturing and Industry 4.0',
-      'Smart Manufacturing',
-      'Computer Integrated Manufacturing',
-      'Lean Manufacturing',
-      'Precision Engineering',
-      'Robotics and Automation',
-      'Manufacturing Process Optimization'
-    ]
-  },
-  {
-    category: 'Energy Storage and Conversion',
+    category: 'Hydrogen Storage and Battery Technologies',
     icon: <BatteryCharging className="h-6 w-6 text-primary-600" />,
     items: [
-      'Battery Technologies',
-      'Supercapacitors',
-      'Hydrogen Storage',
-      'Thermal Energy Storage',
-      'Fuel Cells',
-      'Energy Storage Integration',
-      'Battery Management Systems',
-      'Hybrid Energy Storage Systems'
+      'Lithium-ion, Sodium-ion, and Solid-state Batteries',
+      'Grid-scale Storage vs. Decentralized Storage',
+      'Battery Management Systems and Safety',
+      'Supercapacitors and Hybrid Storage Technologies',
+      'Hydrogen Production and Storage Methods'
     ]
   },
   {
-    category: 'Advanced Materials for Energy',
-    icon: <Database className="h-6 w-6 text-primary-600" />,
-    items: [
-      'Nanomaterials for Energy Applications',
-      'Composite Materials',
-      'Smart Materials',
-      'Materials for Solar Cells',
-      'Materials for Energy Storage',
-      'Biomaterials',
-      'Sustainable Materials',
-      'Material Characterization Techniques'
-    ]
-  },
-  {
-    category: 'Computational Methods and Modeling',
+    category: 'Smart Grids and EV Charging Infrastructure',
     icon: <Cpu className="h-6 w-6 text-primary-600" />,
     items: [
-      'Computational Fluid Dynamics',
-      'Finite Element Analysis',
-      'Machine Learning in Manufacturing',
-      'Energy System Modeling',
-      'Digital Twins',
-      'Optimization Techniques',
-      'Process Simulation',
-      'Big Data Analytics in Manufacturing'
+      'Grid-tied Inverters for Solar and Wind Systems',
+      'High-Efficiency DC-DC Converters',
+      'Cybersecurity in Smart Grid Networks',
+      'Renewable-Powered EV Charging Stations'
     ]
   },
   {
-    category: 'Energy Policy and Economics',
+    category: 'Energy Efficiency in Industrial and Commercial Sectors',
+    icon: <Factory className="h-6 w-6 text-primary-600" />,
+    items: [
+      'CFD modelling for coupled fluid-thermal-structural analysis',
+      'Process Optimization and Waste Heat Recovery',
+      'Building Management Systems (BMS)',
+      'Digital Twins and Predictive Maintenance',
+      'Carbon Capture, Utilization, and Storage Technologies'
+    ]
+  },
+  {
+    category: 'Waste-to-Energy Conversion and Sustainable Practices',
+    icon: <Database className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Anaerobic Digestion and Biogas Production',
+      'Pyrolysis and Gasification of Waste',
+      'Carbon Credits',
+      'Integration with Circular Economy Models'
+    ]
+  },
+  {
+    category: 'AI and IoT Applications in Energy Systems',
+    icon: <Cpu className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Predictive Maintenance and energy consumption Using AI',
+      'Smart Home Energy Management',
+      'IoT-enabled Grid Monitoring and Control',
+      'AI Optimization in Renewable Integration',
+      'Edge Computing and Real-time Decision-Making'
+    ]
+  },
+  {
+    category: 'Policy and Economics of Sustainable Energy Systems',
     icon: <LineChart className="h-6 w-6 text-primary-600" />,
     items: [
-      'Energy Market Analysis',
-      'Regulatory Frameworks',
-      'Carbon Pricing and Emissions Trading',
-      'Sustainability Metrics and Indicators',
-      'Cost-Benefit Analysis of Energy Systems',
-      'Circular Economy',
-      'Energy Access and Equity',
-      'Energy Transition Strategies'
+      'Renewable Energy Incentives and Subsidies',
+      'Carbon Pricing and Emissions Trading Schemes',
+      'International Agreements and Climate Policy',
+      'Economic Impact Assessments and Cost-Benefit Analysis',
+      'Financing Models and Public-Private Partnerships',
+      'Paris Agreement Crediting Mechanism (PACM)'
+    ]
+  },
+  {
+    category: 'Advanced Manufacturing Technologies',
+    icon: <Factory className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Advances in Additive Manufacturing',
+      'Advanced Welding and Joining Processes',
+      'Advanced Materials for Manufacturing (Composites, Alloys, and Ceramics)',
+      'Advances in Biomaterials Science and Engineering'
+    ]
+  },
+  {
+    category: 'Digital and Smart Manufacturing',
+    icon: <Cpu className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Industry 4.0 and Smart Manufacturing Technologies',
+      'Industry 5.0',
+      'IoT Applications in Manufacturing Systems',
+      'Integration of AI and Machine Learning in Manufacturing',
+      'Simulation and Modelling in Manufacturing Processes'
+    ]
+  },
+  {
+    category: 'Automation and Robotics in Manufacturing',
+    icon: <Factory className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Robotics and Automation in Manufacturing',
+      'Flexible and Agile Manufacturing Systems'
+    ]
+  },
+  {
+    category: 'Sustainable and Efficient Manufacturing',
+    icon: <Leaf className="h-6 w-6 text-primary-600" />,
+    items: [
+      'Sustainable Manufacturing Practices and Circular Economy',
+      'Optimization and Quality Control'
     ]
   }
 ];
+
 
 const CallForPapersPage = () => {
   useEffect(() => {

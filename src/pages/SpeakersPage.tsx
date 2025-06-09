@@ -168,7 +168,7 @@ const SpeakersPage: React.FC = () => {
         description="Meet the distinguished speakers of ICSEAMS-2025, including plenary, keynote, and invited speakers from around the world." 
         canonical="/speakers"
       />
-      <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-16">
+      <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
             Conference Speakers

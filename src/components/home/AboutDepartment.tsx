@@ -3,10 +3,10 @@ import { Cog, Microscope, BookOpen, Users } from 'lucide-react';
 
 const AboutDepartment: React.FC = () => {
   return (
-    <section className="section-padding" id="about-department">
+    <section className="py-8" id="about-department">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title" data-aos="fade-up">Department of Mechanical Engineering</h2>
+          <h2 className="section-title" data-aos="fade-up">About Department of Mechanical Engineering</h2>
           <p className="section-subtitle" data-aos="fade-up" data-aos-delay="200">
             Excellence in Mechanical Engineering Education and Research
           </p>

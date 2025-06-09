@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AboutConference: React.FC = () => {
   return (
-    <section className="section-padding" id="about-conference">
+    <section className="py-8" id="about-conference">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title" data-aos="fade-up">About The Conference</h2>

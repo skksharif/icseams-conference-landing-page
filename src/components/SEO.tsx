@@ -10,7 +10,7 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({ 
   title, 
-  description = "1st International Conference on Sustainable Energy and Advanced Manufacturing Systems, to be held from 11th–13th September 2025 at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India.",
+  description = "International Conference on Sustainable Energy and Advanced Manufacturing Systems, to be held from 11th–13th September 2025 at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India.",
   keywords = "ICSEAMS, Conference, Sustainable Energy, Advanced Manufacturing, BVRIT, Engineering Conference",
   canonical
 }) => {

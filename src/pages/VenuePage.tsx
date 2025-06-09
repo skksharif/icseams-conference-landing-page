@@ -44,7 +44,7 @@ const VenuePage: React.FC = () => {
         description="ICSEAMS-2025 will be held at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India from 11th–13th September 2025."
         canonical="/venue"
       />
-      <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-16">
+      <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h1
             className="text-3xl md:text-4xl font-bold mb-4"

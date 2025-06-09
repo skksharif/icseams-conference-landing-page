@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className={`sticky top-0 z-50 w-full ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'} transition-all duration-300`}>
-      <nav className="max-w-site mx-auto px-4 py-3">
+      <nav className="max-w-site mx-auto px-6 py-1">
         <div className="flex justify-between items-center">
        
 
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) => 
-                    `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                    `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                       isActive 
                         ? 'text-conference-green'
                         : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                   <NavLink 
                     to={link.path}
                     className={({ isActive }) => 
-                      `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center ${
+                      `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 flex items-center ${
                         isActive || location.pathname.includes(link.path)
                           ? 'text-conference-green'
                           : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
                             className={({ isActive }) => 
                               `block px-4 py-2 text-sm ${
                                 isActive 
-                                  ? 'bg-gray-100 text-conference-green font-medium'
+                                  ? 'bg-gray-100 text-conference-green font-bold'
                                   : 'text-gray-700 hover:bg-gray-100 hover:text-conference-green'
                               }`
                             }
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
                     key={link.path}
                     to={link.path}
                     className={({ isActive }) => 
-                      `px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      `px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                         isActive 
                           ? 'bg-gray-100 text-conference-green'
                           : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
@@ -155,7 +155,7 @@ const Navbar: React.FC = () => {
                 ) : (
                   <div key={link.path} className="flex flex-col">
                     <button
-                      className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      className={`flex items-center justify-between px-3 py-2 rounded-md text-sm font-bold transition-colors duration-200 ${
                         location.pathname.includes(link.path)
                           ? 'bg-gray-100 text-conference-green'
                           : 'text-gray-700 hover:text-conference-green hover:bg-gray-100'
@@ -180,7 +180,7 @@ const Navbar: React.FC = () => {
                             className={({ isActive }) => 
                               `block px-3 py-2 rounded-md text-sm ${
                                 isActive 
-                                  ? 'text-conference-green font-medium'
+                                  ? 'text-conference-green font-bold'
                                   : 'text-gray-700 hover:text-conference-green'
                               }`
                             }

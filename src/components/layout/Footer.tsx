@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               <h2 className="text-xl font-bold">ICSEAMS-2025</h2>
             </div>
             <p className="text-gray-300 mb-4">
-              1st International Conference on Sustainable Energy and Advanced Manufacturing Systems
+              International Conference on Sustainable Energy and Advanced Manufacturing Systems
             </p>
             <div className="flex items-center gap-2 text-gray-300 mb-2">
               <Calendar size={16} />

@@ -26,7 +26,7 @@ const AboutInstitute: React.FC = () => {
   ];
 
   return (
-    <section className="section-padding bg-gray-100" id="about-institute">
+    <section className="py-8 bg-gray-100" id="about-institute">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title" data-aos="fade-up">About BVRIT</h2>

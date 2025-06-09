@@ -6,7 +6,7 @@ const slides = [
   {
     image: "/slides/s4.png",
     title: "ICSEAMS-2025",
-    subtitle: "1st International Conference on Sustainable Energy and Advanced Manufacturing Systems"
+    subtitle: "International Conference on Sustainable Energy and Advanced Manufacturing Systems"
   },
     {
     image: "/slides/s1.png",

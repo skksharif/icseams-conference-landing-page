@@ -76,7 +76,7 @@ const ImportantDatesPage: React.FC = () => {
         description="Key deadlines and important dates for ICSEAMS-2025, including submission deadlines, notification dates, and conference dates." 
         canonical="/important-dates"
       />
-      <div className="bg-gradient-to-r from-conference-green/90 to-conference-purple/90 text-white py-16">
+      <div className="bg-gradient-to-r from-conference-green/90 to-conference-purple/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
             Important Dates

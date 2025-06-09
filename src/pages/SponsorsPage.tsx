@@ -126,7 +126,7 @@ const SponsorsPage: React.FC = () => {
         description="ICSEAMS-2025 is proudly sponsored by leading organizations in the fields of sustainable energy and advanced manufacturing systems." 
         canonical="/sponsors"
       />
-      <div className="bg-gradient-to-r from-conference-green/90 to-conference-orange/90 text-white py-16">
+      <div className="bg-gradient-to-r from-conference-green/90 to-conference-orange/90 text-white py-10">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">
             Our Sponsors

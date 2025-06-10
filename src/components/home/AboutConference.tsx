@@ -16,7 +16,7 @@ const AboutConference: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="order-2 lg:order-1" data-aos="fade-right">
             <p className="text-gray-700 mb-4">
-              The 1st International Conference on Sustainable Energy and Advanced Manufacturing Systems (ICSEAMS-2025) brings together researchers, industry professionals, and academics from around the world to share cutting-edge research, innovations, and practical applications.
+              The International Conference on Sustainable Energy and Advanced Manufacturing Systems (ICSEAMS-2025) brings together researchers, industry professionals, and academics from around the world to share cutting-edge research, innovations, and practical applications.
             </p>
             <p className="text-gray-700 mb-4">
               ICSEAMS-2025 focuses on two critical areas that are shaping our future: sustainable energy solutions to address climate challenges and advanced manufacturing systems that are revolutionizing production processes.

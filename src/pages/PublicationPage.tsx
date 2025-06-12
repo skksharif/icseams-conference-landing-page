@@ -113,48 +113,6 @@ const PublicationPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="mb-12" data-aos="fade-up">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Indexed Journals</h2>
-            <p className="text-gray-700 mb-6">
-              Selected high-quality papers will be recommended for publication in the following Scopus and Web of Science indexed journals (subject to additional review by the journal if required):
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {journals.map((journal, index) => (
-                <div 
-                  key={journal.name}
-                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
-                  data-aos="fade-up"
-                  data-aos-delay={index * 100}
-                >
-                  <h3 className="text-lg font-semibold text-gray-800 mb-3">{journal.name}</h3>
-                  <div className="space-y-2 text-gray-700 text-sm mb-4">
-                    <p className="flex items-center">
-                      <CheckCircle size={16} className="mr-2 text-conference-green" />
-                      <span className="font-medium">Indexing:</span> <span className="ml-1">{journal.indexing}</span>
-                    </p>
-                    <p className="flex items-center">
-                      <CheckCircle size={16} className="mr-2 text-conference-green" />
-                      <span className="font-medium">Impact Factor:</span> <span className="ml-1">{journal.impact}</span>
-                    </p>
-                    <p className="flex items-center">
-                      <CheckCircle size={16} className="mr-2 text-conference-green" />
-                      <span className="font-medium">Publisher:</span> <span className="ml-1">{journal.publisher}</span>
-                    </p>
-                  </div>
-                  <a 
-                    href={journal.website} 
-                    className="text-conference-orange hover:text-conference-purple flex items-center text-sm font-medium transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Visit Journal Website</span>
-                    <ExternalLink size={14} className="ml-1" />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
 
           <div className="mb-12" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Conference Proceedings</h2>

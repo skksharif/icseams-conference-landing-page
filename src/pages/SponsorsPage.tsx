@@ -136,8 +136,13 @@ const SponsorsPage: React.FC = () => {
           </p>
         </div>
       </div>
+       <div className="w-full h-[30vh]">
+         <p className="text-center text-3xl md:text-4xl font-bold mb-4 mt-10">Updated Soon</p>
+      </div>
 
-      <div className="container mx-auto px-4 py-12">
+    {
+      /*
+        <div className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12" data-aos="fade-up">
             <p className="text-gray-700 mb-8">
@@ -159,7 +164,6 @@ const SponsorsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Platinum Sponsors */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">
               Platinum Sponsors
@@ -178,7 +182,6 @@ const SponsorsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Gold Sponsors */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">
               Gold Sponsors
@@ -197,7 +200,6 @@ const SponsorsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Silver Sponsors */}
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center" data-aos="fade-up">
               Silver Sponsors
@@ -216,7 +218,6 @@ const SponsorsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Sponsorship Opportunities */}
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 mt-8" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
               Sponsorship Opportunities
@@ -297,6 +298,8 @@ const SponsorsPage: React.FC = () => {
           </div>
         </div>
       </div>
+      */
+    }
     </>
   );
 };

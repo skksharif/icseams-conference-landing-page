@@ -48,127 +48,106 @@ const CallForPapersPage: React.FC = () => {
 
   const tracks = [
     {
-      title: "Renewable Energy Technologies",
+      title: "Design of Renewable Energy Technologies",
       topics: [
-        "Solar energy technologies and applications",
-        "Wind energy systems and optimization",
-        "Hydropower and ocean energy",
-        "Geothermal energy extraction and utilization",
-        "Bioenergy and biofuels",
-        "Hybrid renewable energy systems",
+        "Solar Photovoltaic (PV) and Solar thermal systems",
+        "Wind Turbine Design and Offshore Wind Technologies",
+        "Small and Large scale hydropower systems",
+        "Design of hybrid renewable energy systems",
       ],
     },
     {
-      title: "Hydrogen Storage & Battery Tech",
+      title: "Hydrogen Storage and Battery Technologies",
       topics: [
-        "Hydrogen production and storage technologies",
-        "Fuel cell systems and applications",
-        "Battery materials and cell design",
-        "Battery management systems",
-        "Energy storage system integration",
-        "Thermal management in batteries",
+        "Lithium-ion, Sodium-ion, and Solid-state Batteries",
+        "Grid-scale Storage vs. Decentralized Storage",
+        "Battery Management Systems and Safety",
+        "Supercapacitors and Hybrid Storage Technologies",
+        "Hydrogen Production and Storage Methods",
       ],
     },
     {
-      title: "Smart Grids & EV Infrastructure",
+      title: "Smart Grids and EV Charging Infrastructure",
       topics: [
-        "Smart grid technologies and applications",
-        "EV charging infrastructure",
-        "Vehicle-to-grid (V2G) technologies",
-        "Distributed energy resources management",
-        "Power electronics for smart grids",
-        "Smart metering and demand response",
+        "Grid-tied Inverters for Solar and Wind Systems",
+        "High-Efficiency DC-DC Converters",
+        "Cybersecurity in Smart Grid Networks",
+        "Renewable-Powered EV Charging Stations",
       ],
     },
     {
-      title: "Energy Efficiency & Conservation",
+      title: "Energy Efficiency in Industrial and Commercial Sectors",
       topics: [
-        "Building energy efficiency technologies",
-        "Industrial energy optimization",
-        "Energy-efficient HVAC systems",
-        "Waste heat recovery",
-        "Energy monitoring and management systems",
-        "Energy conservation policies and economics",
+        "CFD modelling for coupled fluid-thermal-structural analysis",
+        "Process Optimization and Waste Heat Recovery",
+        "Building Management Systems (BMS)",
+        "Digital Twins and Predictive Maintenance",
+        "Carbon Capture, Utilization, and Storage Technologies",
       ],
     },
     {
-      title: "Waste-to-Energy Technologies",
+      title: "Waste-to-Energy Conversion and Sustainable Practices",
       topics: [
-        "Municipal solid waste to energy",
-        "Biogas production and utilization",
-        "Industrial waste valorization",
-        "Thermal treatment of waste",
-        "Agricultural waste utilization",
-        "Circular economy approaches",
+        "Anaerobic Digestion and Biogas Production",
+        "Pyrolysis and Gasification of Waste",
+        "Integration with Circular Economy Models",
       ],
     },
     {
-      title: "AI/IoT in Energy Systems",
+      title: "AI and IoT Applications in Energy Systems",
       topics: [
-        "AI applications in energy forecasting",
-        "IoT for energy monitoring and control",
-        "Machine learning for energy optimization",
-        "Smart sensors and data analytics",
-        "Digital twins for energy systems",
-        "Predictive maintenance in energy infrastructure",
+        "Predictive Maintenance and energy consumption Using AI",
+        "Smart Home Energy Management",
+        "IoT-enabled Grid Monitoring and Control",
+        "AI Optimization in Renewable Integration",
+        "Edge Computing and Real-time Decision-Making",
       ],
     },
     {
-      title: "Energy Policy & Economics",
+      title: "Policy and Economics of Sustainable Energy Systems",
       topics: [
-        "Renewable energy policies and incentives",
-        "Energy market design and regulations",
-        "Carbon pricing and trading mechanisms",
-        "Economic analysis of energy transitions",
-        "Energy access and equity",
-        "Sustainable development goals and energy",
+        "Renewable Energy Incentives and Subsidies",
+        "Carbon Pricing and Emissions Trading Schemes",
+        "International Agreements and Climate Policy",
+        "Economic Impact Assessments and Cost-Benefit Analysis",
+        "Financing Models and Public-Private Partnerships",
+        "Paris Agreement Crediting Mechanism (PACM)",
       ],
     },
     {
       title: "Advanced Manufacturing Technologies",
       topics: [
-        "Additive manufacturing / 3D printing",
-        "Advanced machining processes",
-        "Laser-based manufacturing",
-        "Micro and nano manufacturing",
-        "Advanced forming and joining technologies",
-        "Sustainable manufacturing processes",
+        "Advances in Additive Manufacturing",
+        "Advanced Welding and Joining Processes",
+        "Advanced Materials for Manufacturing (Composites, Alloys, and Ceramics)",
+        "Advances in Biomaterials Science and Engineering",
       ],
     },
     {
-      title: "Smart & Digital Manufacturing",
+      title: "Digital and Smart Manufacturing",
       topics: [
-        "Industry 4.0 and digital transformation",
-        "Digital twins in manufacturing",
-        "Cloud manufacturing",
-        "Cyber-physical production systems",
-        "Smart factory technologies",
-        "Industrial internet of things (IIoT)",
+        "Industry 4.0 and Smart Manufacturing Technologies",
+        "IoT Applications in Manufacturing Systems",
+        "Integration of AI and Machine Learning in Manufacturing",
+        "Simulation and Modelling in Manufacturing Processes",
       ],
     },
     {
-      title: "Automation & Robotics",
+      title: "Automation and Robotics in Manufacturing",
       topics: [
-        "Industrial automation systems",
-        "Collaborative robots (cobots)",
-        "Autonomous guided vehicles",
-        "Robotic process automation",
-        "Machine vision in manufacturing",
-        "Human-robot interaction",
+        "Robotics and Automation in Manufacturing",
+        "Flexible and Agile Manufacturing Systems",
       ],
     },
     {
-      title: "Sustainable Manufacturing Practices",
+      title: "Sustainable and Efficient Manufacturing",
       topics: [
-        "Life cycle assessment in manufacturing",
-        "Clean production technologies",
-        "Resource efficiency in manufacturing",
-        "Green supply chain management",
-        "Circular economy in manufacturing",
-        "Eco-design for manufacturing",
+        "Sustainable Manufacturing Practices and Circular Economy",
+        "Optimization and Quality Control",
       ],
     },
   ];
+
   const cardColors = [
     "bg-conference-orange/10 border-conference-orange",
     "bg-conference-purple/10 border-conference-purple",
@@ -184,7 +163,7 @@ const CallForPapersPage: React.FC = () => {
     <>
       <SEO
         title="Call for Papers"
-        description="Submit your research papers to ICSEAMS-2025 on topics related to sustainable energy and advanced manufacturing systems."
+        description="Submit your research papers to ICSEAMS-2026 on topics related to sustainable energy and advanced manufacturing systems."
         canonical="/call-for-papers"
       />
       <div className="bg-gradient-to-r from-conference-green/90 to-conference-orange/90 text-white py-10">
@@ -200,7 +179,7 @@ const CallForPapersPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Submit your research contributions to ICSEAMS-2025
+            Submit your research contributions to ICSEAMS-2026
           </p>
         </div>
       </div>
@@ -212,7 +191,7 @@ const CallForPapersPage: React.FC = () => {
               Conference Overview
             </h2>
             <p className="text-gray-700 mb-4">
-              ICSEAMS-2025 invites original research contributions related to
+              ICSEAMS-2026 invites original research contributions related to
               sustainable energy and advanced manufacturing systems. The
               conference aims to bring together researchers, industry
               professionals, and academics to share their innovative work and
@@ -287,7 +266,7 @@ const CallForPapersPage: React.FC = () => {
               Conference Tracks
             </h2>
             <p className="text-gray-700 mb-6">
-              ICSEAMS-2025 welcomes papers across a wide range of topics related
+              ICSEAMS-2026 welcomes papers across a wide range of topics related
               to sustainable energy and advanced manufacturing systems. Click on
               each track to view detailed topics:
             </p>
@@ -318,7 +297,7 @@ const CallForPapersPage: React.FC = () => {
               Paper Template
             </h2>
             <p className="text-gray-700 mb-4">
-              Please download and use the official ICSEAMS-2025 paper template
+              Please download and use the official ICSEAMS-2026 paper template
               to format your submission correctly.
             </p>
             <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 flex flex-col sm:flex-row items-center justify-between">
@@ -326,7 +305,7 @@ const CallForPapersPage: React.FC = () => {
                 <FileText size={36} className="text-conference-purple mr-4" />
                 <div>
                   <h4 className="font-semibold text-gray-800">
-                    ICSEAMS-2025 Paper Template
+                    ICSEAMS-2026 Paper Template
                   </h4>
                   <p className="text-sm text-gray-600">Word Document (.docx)</p>
                 </div>

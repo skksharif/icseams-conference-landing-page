@@ -38,7 +38,7 @@ const AboutInstitute: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
           <div data-aos="fade-right">
             <img 
-              src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+              src="/college.jpg" 
               alt="BVRIT Campus" 
               className="rounded-lg shadow-xl w-full h-[400px] object-cover"
             />
@@ -48,13 +48,13 @@ const AboutInstitute: React.FC = () => {
               A Premier Engineering Institution
             </h3>
             <p className="text-gray-700 mb-4">
-              B V Raju Institute of Technology (BVRIT) is a leading engineering institution in Telangana, India, committed to providing quality education and fostering innovation. Established with a vision to create competent engineers who contribute to technological advancement, BVRIT has consistently maintained high standards in education and research.
+              B.V. Raju Institute of Technology (BVRIT) was established by the eminent philanthropist (late) Padmabhushan Dr. B.V. Raju under the aegis of Sri Vishnu Educational Society (SVES) in 1997. BVRIT was granted autonomous status by the UGC in 2014. The institute is duly approved by the AICTE and affiliated to JNTU Hyderabad.
             </p>
             <p className="text-gray-700 mb-4">
-              The institute offers undergraduate and postgraduate programs in various engineering disciplines, equipped with modern laboratories, libraries, and other facilities to support academic excellence and research activities.
+              BVRIT is accredited by the NAAC with an A+ grade and is a member of the NBA. The campus is equipped with centers of excellence such as the Assistive Technology Lab (ATL), the AICTE-Idea Lab, the BVRIT Going Green initiative, the Centennial Health Centre, the Entrepreneurship Development Cell (EDC), and the Graduate Study Abroad Centre (GSAC).
             </p>
             <p className="text-gray-700">
-              BVRIT's campus provides an ideal environment for hosting ICSEAMS-2025, with state-of-the-art conference facilities, accommodation options, and a serene atmosphere conducive to academic discussions and networking.
+              Other prominent facilities include the Rural Women Technology Park, the Unnat Bharat Abhiyan, the Vishnu Audio Visual Centre, the Artificial Intelligence & Machine Learning department, the Center for VLSI Design, the Vishnu Space Engineering Laboratory, the Robotics Center for Enhanced Learning, the Center for Automotive Technologies, the Center for Nanotechnology, the TVS Haritha Techserve, and the Computational Fluid Dynamics (CFD) laboratory.
             </p>
           </div>
         </div>

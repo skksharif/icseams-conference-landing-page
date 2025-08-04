@@ -41,7 +41,7 @@ const VenuePage: React.FC = () => {
     <>
       <SEO
         title="Venue"
-        description="ICSEAMS-2025 will be held at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India from 11th–13th September 2025."
+        description="ICSEAMS-2026 will be held at B V Raju Institute of Technology (BVRIT), Narsapur, Telangana, India from 10th–11th April 2026."
         canonical="/venue"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -80,7 +80,7 @@ const VenuePage: React.FC = () => {
                 </h2>
               </div>
               <p className="text-gray-700 mb-4">
-                ICSEAMS-2025 will be held at the beautiful campus of B V Raju
+                ICSEAMS-2026 will be held at the beautiful campus of B V Raju
                 Institute of Technology (BVRIT), located in Narsapur, Telangana,
                 India.
               </p>

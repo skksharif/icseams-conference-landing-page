@@ -13,7 +13,7 @@ const CommitteePage: React.FC = () => {
     <>
       <SEO 
         title="Committee" 
-        description="Meet the Advisory, Technical, and Organizing Committees of ICSEAMS-2025." 
+        description="Meet the Advisory, Technical, and Organizing Committees of ICSEAMS-2026." 
         canonical="/committee"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-16">
@@ -22,7 +22,7 @@ const CommitteePage: React.FC = () => {
             Conference Committees
           </h1>
           <p className="max-w-3xl mx-auto text-lg opacity-90" data-aos="fade-up" data-aos-delay="200">
-            Meet the distinguished experts and organizers behind ICSEAMS-2025
+            Meet the distinguished experts and organizers behind ICSEAMS-2026
           </p>
         </div>
       </div>

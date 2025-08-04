@@ -103,7 +103,7 @@ const OrganizingCommittee: React.FC = () => {
           Organizing Committee
         </h2>
         <p className="text-gray-600" data-aos="fade-up" data-aos-delay="100">
-          Meet the team organizing ICSEAMS-2025 and ensuring a successful conference experience.
+          Meet the team organizing ICSEAMS-2026 and ensuring a successful conference experience.
         </p>
       </div>
 

@@ -123,7 +123,7 @@ const SponsorsPage: React.FC = () => {
     <>
       <SEO 
         title="Sponsors" 
-        description="ICSEAMS-2025 is proudly sponsored by leading organizations in the fields of sustainable energy and advanced manufacturing systems." 
+        description="ICSEAMS-2026 is proudly sponsored by leading organizations in the fields of sustainable energy and advanced manufacturing systems." 
         canonical="/sponsors"
       />
       <div className="bg-gradient-to-r from-conference-green/90 to-conference-orange/90 text-white py-10">
@@ -132,7 +132,7 @@ const SponsorsPage: React.FC = () => {
             Our Sponsors
           </h1>
           <p className="max-w-3xl mx-auto text-lg opacity-90" data-aos="fade-up" data-aos-delay="200">
-            ICSEAMS-2025 is supported by leading organizations in industry and academia
+            ICSEAMS-2026 is supported by leading organizations in industry and academia
           </p>
         </div>
       </div>
@@ -146,7 +146,7 @@ const SponsorsPage: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12" data-aos="fade-up">
             <p className="text-gray-700 mb-8">
-              We extend our sincere gratitude to all our sponsors for their generous support in making ICSEAMS-2025 a success. Their contributions enable us to organize a high-quality conference and provide a platform for researchers and professionals to share knowledge and innovations.
+              We extend our sincere gratitude to all our sponsors for their generous support in making ICSEAMS-2026 a success. Their contributions enable us to organize a high-quality conference and provide a platform for researchers and professionals to share knowledge and innovations.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-gray-200 text-gray-800">

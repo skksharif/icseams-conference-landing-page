@@ -13,14 +13,14 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <LightbulbIcon className="w-6 h-6 text-conference-orange" />
-              <h2 className="text-xl font-bold">ICSEAMS-2025</h2>
+              <h2 className="text-xl font-bold">ICSEAMS-2026</h2>
             </div>
             <p className="text-gray-300 mb-4">
               International Conference on Sustainable Energy and Advanced Manufacturing Systems
             </p>
             <div className="flex items-center gap-2 text-gray-300 mb-2">
               <Calendar size={16} />
-              <span>11th–13th September 2025</span>
+              <span>10<sup>th</sup>–11<sup>th</sup> April 2026</span>
             </div>
             <div className="flex items-start gap-2 text-gray-300">
               <MapPin size={16} className="mt-1 flex-shrink-0" />
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-gray-700 text-center text-gray-400 text-sm">
-          <p>&copy; {currentYear} ICSEAMS-2025. All rights reserved.</p>
+          <p>&copy; {currentYear} ICSEAMS-2026. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
     <>
       <SEO 
         title="Home" 
-        description="1st International Conference on Sustainable Energy and Advanced Manufacturing Systems, 11th–13th September 2025, BVRIT, India" 
+        description="2nd International Conference on Sustainable Energy and Advanced Manufacturing Systems, 10–11 April 2026, BVRIT, India" 
         canonical="/"
       />
       <Hero />

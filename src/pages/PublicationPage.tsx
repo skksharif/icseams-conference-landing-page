@@ -38,7 +38,7 @@ const PublicationPage: React.FC = () => {
     <>
       <SEO 
         title="Publication" 
-        description="Information about paper publication opportunities at ICSEAMS-2025, including indexed journals and conference proceedings." 
+        description="Information about paper publication opportunities at ICSEAMS-2026, including indexed journals and conference proceedings." 
         canonical="/publication"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-green/90 text-white py-10">
@@ -57,7 +57,7 @@ const PublicationPage: React.FC = () => {
           <div className="mb-12" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Publication Process</h2>
             <p className="text-gray-700 mb-6">
-              ICSEAMS-2025 offers authors the opportunity to have their research papers published in reputed Scopus and Web of Science indexed journals or in the conference proceedings. All submitted papers undergo a rigorous triple peer-review process to ensure high-quality publications.
+              ICSEAMS-2026 offers authors the opportunity to have their research papers published in reputed Scopus and Web of Science indexed journals or in the conference proceedings. All submitted papers undergo a rigorous triple peer-review process to ensure high-quality publications.
             </p>
             
             <div className="space-y-6">
@@ -117,7 +117,7 @@ const PublicationPage: React.FC = () => {
           <div className="mb-12" data-aos="fade-up">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Conference Proceedings</h2>
             <p className="text-gray-700 mb-6">
-              All accepted papers that are presented at the conference will be published in the official ICSEAMS-2025 conference proceedings. The proceedings will be:
+              All accepted papers that are presented at the conference will be published in the official ICSEAMS-2026 conference proceedings. The proceedings will be:
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -179,7 +179,7 @@ const PublicationPage: React.FC = () => {
               Publication Ethics
             </h3>
             <p className="text-gray-700 mb-4">
-              ICSEAMS-2025 follows strict publication ethics and standards to ensure the integrity of the scientific record. Authors must adhere to the following:
+              ICSEAMS-2026 follows strict publication ethics and standards to ensure the integrity of the scientific record. Authors must adhere to the following:
             </p>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start">

@@ -14,7 +14,7 @@ const RegistrationPage: React.FC = () => {
     <>
       <SEO
         title="Registration"
-        description="Register for ICSEAMS-2025. Early bird and regular registration fees for academicians, industry professionals, students, and attendees."
+        description="Register for ICSEAMS-2026. Early bird and regular registration fees for academicians, industry professionals, students, and attendees."
         canonical="/registration"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-green/90 text-white py-10">
@@ -30,7 +30,7 @@ const RegistrationPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Join us at ICSEAMS-2025 for an enriching experience
+            Join us at ICSEAMS-2026 for an enriching experience
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@ const RegistrationPage: React.FC = () => {
               Registration Information
             </h2>
             <p className="text-gray-700 mb-6">
-              Registration for ICSEAMS-2025 includes access to all conference
+              Registration for ICSEAMS-2026 includes access to all conference
               sessions, conference materials, coffee breaks, lunches during the
               conference days, and a certificate of participation.
             </p>
@@ -65,13 +65,14 @@ const RegistrationPage: React.FC = () => {
                         Category
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        Early Bird (till Aug 25)
+                        Early Bird (till Mar 15, 2026)
                       </th>
                       <th className="py-3 px-4 text-left font-semibold text-gray-700 border-b">
-                        Regular (till Sept 5)
+                        Late Registration (till Mar 27, 2026)
                       </th>
                     </tr>
                   </thead>
+
                   <tbody>
                     <tr>
                       <td className="py-3 px-4 border-b text-gray-800">
@@ -185,7 +186,7 @@ const RegistrationPage: React.FC = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-conference-orange rounded-full mt-2 mr-2"></span>
-                    Registration deadline: September 5, 2025
+                    Registration Deadline: March 27, 2026
                   </li>
                 </ul>
               </div>
@@ -217,7 +218,7 @@ const RegistrationPage: React.FC = () => {
                   </p>
                   <p className="text-gray-700 mb-2">
                     <span className="font-medium">Account Name:</span>{" "}
-                    ICSEAMS-2025
+                    ICSEAMS-2026
                   </p>
                   <p className="text-gray-700 mb-2">
                     <span className="font-medium">Account Number:</span>{" "}
@@ -226,7 +227,7 @@ const RegistrationPage: React.FC = () => {
                   <p className="text-gray-700 mb-2">
                     <span className="font-medium">IFSC Code:</span> IDIB000N183
                   </p>
-                     <p className="text-gray-700 mb-2">
+                  <p className="text-gray-700 mb-2">
                     <span className="font-medium">Branch:</span> Narsapur
                   </p>
                 </div>
@@ -321,7 +322,7 @@ const RegistrationPage: React.FC = () => {
                   Registration Deadlines
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Early Bird: August 25, 2025 | Regular: September 5, 2025
+                  Early Bird: March 15, 2026 | Late Registration: March 27, 2026
                 </p>
               </div>
             </div>

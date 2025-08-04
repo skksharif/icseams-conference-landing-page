@@ -8,7 +8,7 @@ const slides = [
     title: "ICSEAMS-2025",
     subtitle: "International Conference on Sustainable Energy and Advanced Manufacturing Systems"
   },
-    {
+  {
     image: "/slides/s1.png",
     title: "Advanced Manufacturing",
     subtitle: "Bridging research and industry in smart and digital manufacturing"
@@ -18,8 +18,48 @@ const slides = [
     title: "Sustainable Energy",
     subtitle: "Exploring innovations in renewable energy technologies and solutions"
   },
-
+  {
+    image: "/slides/s2.png",
+    title: "Conference Highlights",
+    subtitle: "Keynotes, workshops, and networking opportunities with global experts"
+  },
+  {
+    image: "/slides/s5.jpg",
+    title: "Join Us",
+    subtitle: "Be part of the future of sustainable energy and advanced manufacturing"
+  },
+  {
+    image: "/slides/s6.jpg",
+    title: "Call for Papers",
+    subtitle: "Submit your research and innovations in sustainable energy and manufacturing"
+  },
+  {
+    image: "/slides/s7.jpg",
+    title: "About the Conference",
+    subtitle: "A platform for global collaboration in energy and manufacturing systems"
+  },
+  {
+    image: "/slides/s8.jpg",
+    title: "Conference Focus",
+    subtitle: "Sustainable energy and advanced manufacturing shaping the future"
+  },
+  {
+    image: "/slides/s9.jpg",
+    title: "BVRIT Campus",
+    subtitle: "Premier institution with top-tier facilities for research and learning"
+  },
+  {
+    image: "/slides/s10.jpg",
+    title: "Mechanical Engineering",
+    subtitle: "Excellence in sustainable energy and advanced manufacturing research"
+  },
+  {
+    image: "/slides/s11.jpg",
+    title: "Research & Innovation",
+    subtitle: "Empowering research in manufacturing, energy, and automation"
+  }
 ];
+
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,8 +73,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative h-[80vh] max-h-[500px] overflow-hidden">
-      {/* Slides */}
+    <div className="relative h-[85vh] max-h-[600px] overflow-hidden">
       {slides.map((slide, index) => (
         <div 
           key={index}
@@ -71,12 +110,12 @@ const Hero: React.FC = () => {
             >
               <div className="flex items-center gap-2">
                 <Calendar size={18} className="text-conference-orange" />
-                <span>11th–13th September 2025</span>
+                <span>10<sup>th</sup> & 11<sup>th</sup> April 2026</span>
               </div>
               <div className="hidden sm:block bg-white w-1 h-1 rounded-full" />
               <div className="flex items-center gap-2">
                 <MapPin size={18} className="text-conference-orange" />
-                <span>BVRIT, Narsapur, Telangana, India</span>
+                <span>VITB, Bhimavaram, Andhra Pradesh, India</span>
               </div>
             </div>
             <div 
@@ -95,7 +134,6 @@ const Hero: React.FC = () => {
         </div>
       ))}
 
-      {/* Slide indicators */}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-2">
         {slides.map((_, index) => (
           <button

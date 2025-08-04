@@ -17,7 +17,7 @@ const ContactPage: React.FC = () => {
     <>
       <SEO
         title="Contact Us"
-        description="Contact the organizers of ICSEAMS-2025 for any queries related to the conference, paper submissions, registration, or sponsorship."
+        description="Contact the organizers of ICSEAMS-2026 for any queries related to the conference, paper submissions, registration, or sponsorship."
         canonical="/contact"
       />
       <div className="bg-gradient-to-r from-conference-orange/90 to-conference-purple/90 text-white py-10">
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Get in touch with the ICSEAMS-2025 organizing team
+            Get in touch with the ICSEAMS-2026 organizing team
           </p>
         </div>
       </div>
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
                 Contact Information
               </h2>
               <p className="text-gray-700 mb-8">
-                If you have any questions about ICSEAMS-2025, please don't
+                If you have any questions about ICSEAMS-2026, please don't
                 hesitate to contact us. Our team is here to assist you with any
                 queries related to paper submissions, registration, venue, or
                 other conference matters.
@@ -78,12 +78,22 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
                     <p className="text-gray-800">
-                      +91 8309463748 (Dr. M Sandeep Kumar)
+                      <i>Joint Secretary : </i> <br />
+                      +91 8500989791
+                      <br /> Dr. K Nagu
                     </p>
-                    <div className="mt-4">
-                      <strong>Organizing secretary </strong>
+                    <div className="mt-2">
+                      <p> </p>
                       <p className="text-gray-800">
-                        +91 9182139090 (Dr. M Vishnu Vardhan Reddy)
+                        <i>Organizing secretary :</i> <br />
+                        +91 9182139090 <br />
+                        Dr. M Vishnu Vardhan Reddy
+                      </p>
+                    </div>
+                    <div className="mt-2">
+                      <p> </p>
+                      <p className="text-gray-800">
+                        <i>Treasurer : </i><br/>+91 9959496084 <br/>Dr. R Naresh
                       </p>
                     </div>
                   </div>

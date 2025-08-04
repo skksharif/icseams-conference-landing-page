@@ -177,7 +177,7 @@ const SpeakersPage: React.FC = () => {
     <>
       <SEO
         title="Speakers"
-        description="Meet the distinguished speakers of ICSEAMS-2025, including plenary, keynote, and invited speakers from around the world."
+        description="Meet the distinguished speakers of ICSEAMS-2026, including plenary, keynote, and invited speakers from around the world."
         canonical="/speakers"
       />
       <div className="bg-gradient-to-r from-conference-purple/90 to-conference-orange/90 text-white py-10">
@@ -207,7 +207,7 @@ const SpeakersPage: React.FC = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-8" data-aos="fade-up">
             <p className="text-gray-700 mb-6">
-              ICSEAMS-2025 will feature distinguished speakers from academia and industry, sharing their expertise and insights on the latest developments in sustainable energy and advanced manufacturing systems.
+              ICSEAMS-2026 will feature distinguished speakers from academia and industry, sharing their expertise and insights on the latest developments in sustainable energy and advanced manufacturing systems.
             </p>
             <div className="inline-flex flex-wrap justify-center gap-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm bg-conference-purple text-white">

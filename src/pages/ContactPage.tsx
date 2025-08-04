@@ -236,61 +236,7 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
 
-          <div
-            className="bg-gray-50 rounded-lg border border-gray-200 p-6"
-            data-aos="fade-up"
-          >
-            <h2 className="text-xl font-bold text-gray-800 mb-4">
-              Specific Inquiries
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  Paper Submissions
-                </h3>
-                <p className="text-gray-700 text-sm mb-2">
-                  For inquiries related to paper submissions, review process, or
-                  publication:
-                </p>
-                <a
-                  href="mailto:icseams.papers@bvrit.ac.in"
-                  className="text-conference-orange hover:underline text-sm"
-                >
-                  icseams.papers@bvrit.ac.in
-                </a>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  Registration
-                </h3>
-                <p className="text-gray-700 text-sm mb-2">
-                  For inquiries related to conference registration or payment:
-                </p>
-                <a
-                  href="mailto:icseams.registration@bvrit.ac.in"
-                  className="text-conference-orange hover:underline text-sm"
-                >
-                  icseams.registration@bvrit.ac.in
-                </a>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-gray-800 mb-2">
-                  Sponsorship
-                </h3>
-                <p className="text-gray-700 text-sm mb-2">
-                  For inquiries related to sponsorship opportunities:
-                </p>
-                <a
-                  href="mailto:icseams.sponsors@bvrit.ac.in"
-                  className="text-conference-orange hover:underline text-sm"
-                >
-                  icseams.sponsors@bvrit.ac.in
-                </a>
-              </div>
-            </div>
-          </div>
+      
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, ChevronUp, FileText, Download } from "lucide-react";
 import SEO from "../components/SEO";
+import BrochureDownload from "./BrochureDownload";
 
 interface TrackProps {
   title: string;
@@ -190,14 +191,14 @@ const CallForPapersPage: React.FC = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Conference Overview
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               ICSEAMS-2026 invites original research contributions related to
               sustainable energy and advanced manufacturing systems. The
               conference aims to bring together researchers, industry
               professionals, and academics to share their innovative work and
               latest findings in these rapidly evolving fields.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               All submitted papers will undergo a rigorous triple peer-review
               process to ensure the highest quality of technical content.
               Accepted papers will be published in Scopus and Web of Science
@@ -259,6 +260,7 @@ const CallForPapersPage: React.FC = () => {
                 </Link>
               </div>
             </div>
+            <BrochureDownload/>
           </div>
 
           <div className="mb-12" data-aos="fade-up">

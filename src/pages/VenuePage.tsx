@@ -79,12 +79,12 @@ const VenuePage: React.FC = () => {
                   Venue Location
                 </h2>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify text-justify">
                 ICSEAMS-2026 will be held at the beautiful campus of B V Raju
                 Institute of Technology (BVRIT), located in Narsapur, Telangana,
                 India.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify text-justify">
                 The venue provides modern conference facilities, comfortable
                 accommodations, and a serene environment perfect for academic
                 discussions and networking.
@@ -162,7 +162,7 @@ const VenuePage: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">By Air</h4>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4 text-justify">
                       The nearest airport is Rajiv Gandhi International Airport
                       (HYD) in Hyderabad, approximately 70 km from the venue.
                       Taxis and cab services are available from the airport to
@@ -182,7 +182,7 @@ const VenuePage: React.FC = () => {
                     <h4 className="font-semibold text-gray-800 mb-2">
                       By Road
                     </h4>
-                    <p className="text-gray-700 mb-4">
+                    <p className="text-gray-700 mb-4 text-justify">
                       BVRIT is well-connected by road. Regular buses operate
                       from Hyderabad to Narsapur. Alternatively, taxis and cab
                       services can be hired from Hyderabad.
@@ -210,7 +210,7 @@ const VenuePage: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Accommodation
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Several accommodation options are available near the conference
                 venue:
               </p>
@@ -255,10 +255,10 @@ const VenuePage: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Weather
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 text-justify">
                 Narsapur in September typically experiences:
               </p>
-              <ul className="space-y-2 text-gray-700 mb-4">
+              <ul className="space-y-2 text-gray-700 mb-4 text-justify">
                 <li className="flex items-start">
                   <Check
                     size={18}

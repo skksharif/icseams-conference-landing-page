@@ -41,7 +41,7 @@ const RegistrationPage: React.FC = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Registration Information
             </h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6 text-justify">
               Registration for ICSEAMS-2026 includes access to all conference
               sessions, conference materials, coffee breaks, lunches during the
               conference days, and a certificate of participation.

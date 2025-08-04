@@ -22,14 +22,14 @@ const AboutConference: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="order-2 lg:order-1" data-aos="fade-right">
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               The International Conference on Sustainable Energy & Advanced
               Manufacturing Systems (ICSEAMS - 2026) is a premier event that
               brings together researchers, industry experts, academicians, and
               policymakers to explore and discuss advancements in energy systems
               and manufacturing technologies.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
               With the aim of fostering innovation and promoting sustainable
               practices, ICSEAMS - 2026 will provide a global platform to share
               cutting-edge research, practical insights, and technological
@@ -38,7 +38,7 @@ const AboutConference: React.FC = () => {
               energy, smart grids, hydrogen technologies, additive
               manufacturing, Industry 4.0, sustainable practices, and more.
             </p>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6 text-justify">
               Participants will have the opportunity to engage in insightful
               discussions, form collaborative partnerships, and explore
               solutions that align with global sustainability goals and
@@ -68,7 +68,7 @@ const AboutConference: React.FC = () => {
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
                 <div className="text-conference-purple font-bold text-xl">
-                  11-12
+                  10-11
                 </div>
                 <div className="text-gray-700">April 2026</div>
               </div>

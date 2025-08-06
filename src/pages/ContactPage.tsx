@@ -78,22 +78,22 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
                     <p className="text-gray-800">
-                      <i>Joint Secretary : </i> <br />
-                      +91 8500989791
-                      <br /> Dr. K Nagu
+                      <i>Organizing secretary :</i> <br />
+                      +91 9182139090 <br />
+                      Dr. M Vishnu Vardhan Reddy
                     </p>
                     <div className="mt-2">
-                      <p> </p>
                       <p className="text-gray-800">
-                        <i>Organizing secretary :</i> <br />
-                        +91 9182139090 <br />
-                        Dr. M Vishnu Vardhan Reddy
+                        <i>Joint Secretary : </i> <br />
+                        +91 8500989791 <br />
+                        Dr. K Nagu
                       </p>
                     </div>
                     <div className="mt-2">
-                      <p> </p>
                       <p className="text-gray-800">
-                        <i>Treasurer : </i><br/>+91 9959496084 <br/>Dr. R Naresh
+                        <i>Treasurer : </i> <br />
+                        +91 9959496084 <br />
+                        Dr. R Naresh
                       </p>
                     </div>
                   </div>
@@ -235,8 +235,6 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
           </div>
-
-      
         </div>
       </div>
     </>

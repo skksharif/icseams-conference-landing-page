@@ -1,7 +1,6 @@
 import React from "react";
 
 const InternationalTechnicalCommittee: React.FC = () => {
-  
   const members = [
     "Alankrita Singh, IIT Roorkee, India",
     "Allen Anilkumar, NIT Calicut, India",
@@ -24,7 +23,6 @@ const InternationalTechnicalCommittee: React.FC = () => {
     "Jeevan Vemula, GITAM School of Technology Hyderabad, India",
     "Karthik Aamanchi, Publicissapient, USA",
     "Kethavath Kranthi Kumar, JNU Delhi, India",
-    "K Kiran Kumar, NIT Warangal, India",
     "Krishna Kishore Mugada, SVNIT Surat, India",
     "K. Sekar, NIT Calicut, India",
     "Manjaiah M, NIT Warangal, India",
@@ -46,7 +44,6 @@ const InternationalTechnicalCommittee: React.FC = () => {
     "Pritam Das, VIT Chennai, India",
     "P Srinivas, GITAM School of Technology Hyderabad, India",
     "Punna Eshwaraiah, GITAM School of Technology Hyderabad, India",
-    "P Vamsi Krishna, NIT Warangal, India",
     "Ramavath Bheekya Naik, NIT Raipur, India",
     "Raghuram S, NIT Surathkal, India",
     "Ravi Pratap Singh, NIT Kurukshetra, India",
@@ -54,12 +51,9 @@ const InternationalTechnicalCommittee: React.FC = () => {
     "Rohith Tamrakar, SVNIT Surat, India",
     "R. Thirumalai, Hindusthan Institute of Technology, India",
     "Sai Saketha Chandra Athkuri, NIT Calicut, India",
-    "Sandeep Reddy Basireddy, IIT Guwahati, India",
-    "Sandeep Soni, SVNIT Surat, India",
     "Saravana Bavan, Dayananda Sagar University, India",
     "Shital Patil, Bosch Global Software Technologies. India",
     "Shivraman, NIT Warangal, India",
-    "Sivasrinivasu Devadula, IIT Madras, India",
     "S. M. Kartheek Sonti, MAHINDRA & MAHINDRA, India",
     "Srihari Dodla, IIT (BHU) Varanasi, India",
     "Suresh Lakhimsetty, SVNIT, Surat, India",

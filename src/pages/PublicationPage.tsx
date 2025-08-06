@@ -97,7 +97,7 @@ const PublicationPage: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                    Triple Peer-Review
+                    Double Peer Review
                   </h3>
                   <p className="text-gray-700 text-justify">
                     Each paper is reviewed by at least three expert reviewers

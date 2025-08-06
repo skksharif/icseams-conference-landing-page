@@ -124,7 +124,7 @@ const RegistrationPage: React.FC = () => {
               </div>
               <div className="p-4 bg-gray-50 border-t">
                 <p className="text-gray-700 text-sm mb-1">
-                  <strong>Note:</strong> All fees are inclusive of 18% GST
+                  <strong>Note:</strong> All fees are exclusive of 18% GST
                 </p>
                 <p className="text-gray-700 text-sm">
                   Publication charges are separate and will be communicated upon
@@ -150,7 +150,7 @@ const RegistrationPage: React.FC = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-conference-orange rounded-full mt-2 mr-2"></span>
-                    Lunch and refreshments on conference days
+                    Lunch on Inauguration Day and Refreshments
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 bg-conference-orange rounded-full mt-2 mr-2"></span>
